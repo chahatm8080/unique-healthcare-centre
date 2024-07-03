@@ -11,25 +11,15 @@ const Biography = ({imageUrl}) => {
           <p>Biography</p>
           <h3>Who We Are</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            blanditiis sequi aperiam. Debitis fugiat harum ex maxime illo
-            consequatur mollitia voluptatem omnis nihil nesciunt beatae esse
-            ipsam, sapiente totam aspernatur porro ducimus aperiam nisi. Ex
-            magnam voluptatum consectetur reprehenderit fugiat recusandae aut
-            similique illum natus velit, praesentium nostrum nesciunt. Deleniti,
-            nesciunt laboriosam totam iusto!
+            
+A healthcare website serves as a vital platform for providing information, resources, and services to patients, caregivers, and healthcare professionals. Its features are designed to enhance accessibility, convenience, and engagement, ultimately improving the overall healthcare experience. 
           </p>
-          <p>We are all in 2024!</p>
-          <p>We are working on a MERN STACK PROJECT.</p>
+          <p>Best healthcare Services!</p>
+          <p>We are working on a healthcare projectt.</p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-            assumenda exercitationem accusamus sit repellendus quo optio dolorum
-            corporis corrupti. Quas similique vel minima veniam tenetur
-            obcaecati atque magni suscipit laboriosam! Veniam vitae minus nihil
-            cupiditate natus provident. Ex illum quasi pariatur odit nisi
-            voluptas illo qui ipsum mollitia. Libero, assumenda?
+          the features of a healthcare website are designed to empower patients, improve access to care, facilitate communication between patients and providers, and promote proactive health management. By leveraging technology and innovation, healthcare websites play a crucial role in enhancing the patient experience, optimizing healthcare delivery, and promoting better health outcomes.
           </p>
-          <p>Lorem ipsum dolor sit amet!</p>
+          <p>Healthcare webistes</p>
           <p>Coding is fun!</p>
         </div>
       </div>
