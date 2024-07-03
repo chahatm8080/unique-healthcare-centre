@@ -8,9 +8,18 @@ import { errorMiddleware } from "./middlewares/error.js";
 import messageRouter from "./router/messageRouter.js";
 import userRouter from "./router/userRouter.js";
 import appointmentRouter from "./router/appointmentRouter.js";
+import mongoose from "mongoose";
 
 const app = express();
-config({ path: "./config.env" });
+config({ path: "./config/config.env" });
+
+// Database connection URL
+const mongoURI = process.env.MONGO_URL || 'mongodb+srv://chahat:chahat@cluster0.pcilv5o.mongodb.net/?retryWrites=true'
+
+// Connect to MongoDB
+mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => console.log('MongoDB connected'))
+  .catch(err => console.error('Error connecting to database:', err))
 
 app.use(
   cors({
@@ -30,6 +39,7 @@ app.use(
     tempFileDir: "/tmp/",
   })
 );
+
 app.use("/api/v1/message", messageRouter);
 app.use("/api/v1/user", userRouter);
 app.use("/api/v1/appointment", appointmentRouter);
@@ -37,4 +47,5 @@ app.use("/api/v1/appointment", appointmentRouter);
 dbConnection();
 
 app.use(errorMiddleware);
+
 export default app;
